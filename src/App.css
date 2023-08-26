@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+*{box-sizing: border-box; padding: 0; margin: 0}
+body{font-family: 'Roboto', sans-serif; background-color: #F8F8F8;color: #161719;}
+button{padding:8px; border: none; border-radius:4px;cursor: pointer;}
+.App{max-width: 800px; margin: 0 auto;position: relative;}
+
+.header{background-color: #ffffff;padding:8px;text-align: center;border-bottom: 1px solid #F1F1F3;}
+.header h1{font-size: 24px;}
+.header h1 span{color: #7F3DFF;}
+
+.filters{list-style: none;display: flex;align-items: center; justify-content: space-between;width: 100%;background-color: #ffffff; padding: 8px;position: sticky;top: 0;}
+.filters .filter-item{padding: 8px; margin:0px 8px;background-color: #F1F1FA; border-radius: 8px;width: 100%;text-align: center; border: 2px solid #F1F1FA; cursor: pointer;}
+.filters .filter-item.active{font-weight: 600;color: #7F3DFF; border-color: #7F3DFF;}
+
+.todo-list{padding-bottom: 68px;}
+.no-tasks{font-size: 32px; margin-top: 40px; text-align: center; color: lightgray; font-weight: 400;}
+
+.todo-item{background-color: #ffffff; margin: 8px; padding:8px;display: flex;align-items: flex-start;justify-content:space-between;border-radius: 4px;}
+.todo-item p{flex-grow: 1;line-height: 1;font-weight: 400;}
+.todo-item.checked p{color: #91919F; text-decoration: line-through;}
+.todo-item *:not(.delete){margin-right: 8px;}
+.todo-item input[type="checkbox"]{min-width:18px; min-height:18px;}
+.todo-item button.delete{background-color: #FDEFF0;}
+.todo-item button.delete::before{content: "\f2ed"; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: #FD3C4A;}
+.todo-item button.edit{background-color: #F1F1F3;}
+.todo-item button.edit::before{content: "\f304"; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: #5233FF;}
+
+.todo-form{background: #ffffff; padding: 16px; display: flex; justify-content:space-between;position: fixed;width: 100%;bottom: 0;}
+.todo-form input{border: 2px solid #F1F1FA; padding:8px 16px; border-radius: 4px; flex-grow: 1; margin-right: 8px;}
+.todo-form button{background-color: #7F3DFF; color: #ffffff; padding:8px 16px;}
+.todo-form button.add::before{content: "\2b"; font-family: 'Font Awesome 6 Free'; font-weight: 900;}
+.todo-form button.edit::before{content: "\f304"; font-family: 'Font Awesome 6 Free'; font-weight: 900;}
