@@ -39,7 +39,7 @@ const TodoItem = (props) => {
 
   return (
     <div className={`todo-item ${currentTodo.isDone ? "checked" : ""}`}>
-        <input type="checkbox" defaultChecked={currentTodo.isDone} onChange={changeStatus} />
+        {/* <input type="checkbox" defaultChecked={currentTodo.isDone} onChange={changeStatus} /> */}
         <p>{currentTodo.task}</p>
         <button type="button" className="edit" onClick={editTodo}></button>
         <button type="button" className="delete" onClick={deleteTodo}></button>
