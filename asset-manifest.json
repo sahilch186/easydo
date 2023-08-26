@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/easydo/static/css/main.3e02ecb3.css",
-    "main.js": "/easydo/static/js/main.857c2b92.js",
+    "main.js": "/easydo/static/js/main.92dd77a3.js",
     "index.html": "/easydo/index.html",
     "main.3e02ecb3.css.map": "/easydo/static/css/main.3e02ecb3.css.map",
-    "main.857c2b92.js.map": "/easydo/static/js/main.857c2b92.js.map"
+    "main.92dd77a3.js.map": "/easydo/static/js/main.92dd77a3.js.map"
   },
   "entrypoints": [
     "static/css/main.3e02ecb3.css",
-    "static/js/main.857c2b92.js"
+    "static/js/main.92dd77a3.js"
   ]
 }
